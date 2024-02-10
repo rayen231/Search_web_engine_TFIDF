@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie_rec</title>
+    <link rel="stylesheet" type="text/css" href="template/CSS.css">
+</head>
+<body> 
+    <header>
+        <img src="template/image/movie.png" alt="movie_icon" id="image">
+        <h1 id="title"><b>Movies</b></h1>
+    </header>
+
+    <div class="container">
+        <form action="/process_input" method="post">
+            <input type="text" name="q" placeholder="Enter your search term...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+   
+    <table border="" id="table">
+        <tr>
+            <th>Title</th>
+            <th>Original Title</th>
+            <th>Genres</th>
+            <th>Original Language</th>
+            <th>Overview</th>
+            <th>Popularity</th>
+            <th>Production Countries</th>
+            <th>Release Date</th>
+            <th>Runtime Status</th>
+            <th>Vote Average</th>
+            <th>Adult</th>
+        </tr>
+        
+        
+            {% for j in range(10) %}
+            <tr>
+                {% for i in results.columns%}
+                <th>{{  results[i].values[j] }}</th>
+                {% endfor %}
+               
+            </tr>
+            {% endfor %}
+    </table>
+</body>
+</html>
