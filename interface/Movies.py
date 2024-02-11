@@ -142,12 +142,12 @@ display(movie_input, movie_list)
 # In[15]:
 
 
-rating=pd.read_csv("/Users/Lenovo/Desktop/summer/movie_rec/archive (10)/ratings_small.csv")
-rating
+#rating=pd.read_csv("/Users/Lenovo/Desktop/summer/movie_rec/archive (10)/ratings_small.csv")
+#rating
 #can't be done cause of ID problems
 
 
-# In[ ]:
+# In[ ]
 
 
 
